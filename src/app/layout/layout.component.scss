@@ -1,0 +1,36 @@
+@import 'src/assets/css/variables';
+
+#container{
+    margin: 0 auto 30px;
+    max-width: 1000px;  
+    width: 100%;
+    background: $lightGray;
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 16px;
+    border-top: 1px solid rgb(255, 255, 255);
+    box-shadow: rgb(193 201 214 / 45%) 0px 2px 9px 0px;
+
+    h1{
+        color: $darkGray;
+        font-size: 19px;
+        margin: 0 0 35px 0;
+        text-transform: uppercase;
+    }
+}
+@media (min-width: $xsmall) {
+    #container{
+        padding: 30px;
+        h1{
+            font-size: 20px;
+        }
+    }
+}
+
+@media (min-width: $large) {
+    #container{
+        h1{
+            font-size: 35px;
+        }
+    }
+}

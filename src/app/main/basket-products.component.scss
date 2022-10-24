@@ -1,0 +1,68 @@
+@import 'src/assets/css/variables';
+
+.basket-main{
+    .basket-details{
+        width: 100%;
+        text-align: left;
+        th{
+            color: $green;
+            font-size: 16px;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+        tbody{
+            ul{
+                padding: 0;
+                margin: 0;
+                li{
+                    list-style: none;
+                    line-height: 24px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .footer{
+            text-transform: uppercase;
+            font-weight: bold;
+            td{
+                border : none;
+                padding: 10px 0;
+                border-spacing: 0;
+                font-size: 12px;
+            }
+            .btn-print{
+                float: right;
+                @include btn($btn-color);
+            }
+        }
+    }
+
+}
+
+
+
+
+@media (min-width: $xsmall) {
+    .basket-main{
+        .basket-details{
+            th{
+                font-size: 18px;
+                padding-bottom: 20px;
+            }
+            tbody{
+                ul{
+                    li{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .footer{
+                td{
+                    font-size: 18px;
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    
+    }
+}

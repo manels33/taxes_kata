@@ -1,0 +1,33 @@
+//colors
+$lightGray : rgb(247, 248, 250);
+$green: rgb(48, 130, 118);
+$darkGray : rgb(7, 22, 33);
+$gray : rgb(7, 22, 33);
+$btn-color : rgb(0, 116, 97);
+
+
+//devices
+$xsmall : 768px;
+$large : 1024px;
+
+
+
+//mixins
+@mixin btn($color) {
+    background-color: $color;
+    color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-color: $color;
+    border-width: 1px;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.8;
+    }
+}
